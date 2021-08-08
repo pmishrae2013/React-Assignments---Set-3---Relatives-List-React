@@ -13,7 +13,7 @@ class App extends Component {
     render() {
         return(
             <div id="main">
-               <ol>{
+               <ol key="relativeList">{
                    this.state.Relation.map((rel)=> {
                        <li key={rel.index}>{rel.name}</li>
                    })
